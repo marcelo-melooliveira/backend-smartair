@@ -8,6 +8,8 @@ const CriarUsuarioController = require('./controllers/CriarUsuarioController');
 const VerificaBlasterController = require('./controllers/VerificaBlasterController');
 const DadosUsuarioBlaster = require('./controllers/DadosUsuarioBlaster');
 const EnviarComandoController = require('./controllers/EnviarComandoController');
+const BuscaControleRemotoController = require('./controllers/BuscaControleRemotoController');
+const BuscaDispositivosUser = require('./controllers/BuscaDispositivosUserController');
 
 
 
@@ -27,5 +29,9 @@ routes.post("/verifica-blaster", VerificaBlasterController.verificaBlaster);
 routes.post("/dados-usuario-blaster", DadosUsuarioBlaster.dados_usuario_blaster);
 
 routes.post("/comando", EnviarComandoController.enviar_comando);
+
+routes.get("/busca-controle", BuscaControleRemotoController.buscaControle);
+
+routes.get("/busca-dispositivos", BuscaDispositivosUser.buscaDispositivos);
 
 module.exports = routes;
