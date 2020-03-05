@@ -19,7 +19,7 @@ admin.initializeApp({
 });
 
 routes.get("/teste", (req, res)=>{
-  res.send("Servidor no ar!");
+  res.send("Servidor no ar atualizado 02/03!");
 });
 
 routes.post("/criar", CriarUsuarioController.criar);
@@ -33,5 +33,6 @@ routes.post("/comando", EnviarComandoController.enviar_comando);
 routes.get("/busca-controle", BuscaControleRemotoController.buscaControle);
 
 routes.get("/busca-dispositivos", BuscaDispositivosUser.buscaDispositivos);
+
 
 module.exports = routes;
