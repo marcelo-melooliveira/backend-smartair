@@ -10,7 +10,7 @@ const DadosUsuarioBlaster = require('./controllers/DadosUsuarioBlaster');
 const EnviarComandoController = require('./controllers/EnviarComandoController');
 const BuscaControleRemotoController = require('./controllers/BuscaControleRemotoController');
 const BuscaDispositivosUser = require('./controllers/BuscaDispositivosUserController');
-
+const ReturnFeedbackController = require('./controllers/ReturnFeedbackController');
 
 
 admin.initializeApp({
@@ -19,7 +19,7 @@ admin.initializeApp({
 });
 
 routes.get("/teste", (req, res)=>{
-  res.send("Servidor no ar atualizado 02/03!");
+  res.send("Servidor no ar atualizado 13/03!");
 });
 
 routes.post("/criar", CriarUsuarioController.criar);
@@ -33,6 +33,8 @@ routes.post("/comando", EnviarComandoController.enviar_comando);
 routes.get("/busca-controle", BuscaControleRemotoController.buscaControle);
 
 routes.get("/busca-dispositivos", BuscaDispositivosUser.buscaDispositivos);
+
+routes.post("/return-feedback", ReturnFeedbackController.return_feedback);
 
 
 module.exports = routes;

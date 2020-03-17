@@ -1,6 +1,6 @@
 const mqtt = require("mqtt");
 //const client = mqtt.connect("mqtt://test.mosquitto.org/");
-const client = mqtt.connect("mqtt://broker.hivemq.com");
+const client = mqtt.connect("mqtt://198.199.120.175");
 
 
 const topico = "projeto2020/funcap/smartair/";
