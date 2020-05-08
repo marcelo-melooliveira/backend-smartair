@@ -2,7 +2,7 @@ const express = require('express');
 const routes = express.Router();
 
 const admin = require("firebase-admin");
-const serviceAccount = require('../smart-air-5a097-firebase-adminsdk-6tkue-f2099897c8.json');
+const serviceAccount = require('../credencial/smart-air-5a097-firebase-adminsdk-6tkue-f2099897c8.json');
 
 const CriarUsuarioController = require('./controllers/CriarUsuarioController');
 const VerificaBlasterController = require('./controllers/VerificaBlasterController');
