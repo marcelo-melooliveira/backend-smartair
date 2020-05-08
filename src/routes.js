@@ -19,7 +19,7 @@ admin.initializeApp({
 });
 
 routes.get("/teste", (req, res)=>{
-  res.send("Servidor no ar atualizado 18/03!");
+  res.send("Servidor no ar atualizado 08/05!");
 });
 
 routes.post("/criar", CriarUsuarioController.criar);
